@@ -45,7 +45,17 @@ CREATE TABLE `ucenik` (
   `ime` varchar(255) NOT NULL,
   `prezime` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+-- --------------------------------------------------------
 
+--
+-- Table structure for table `cenovnik`
+--
+
+CREATE TABLE `cenovnik` (
+  `idc` int(11) NOT NULL,
+  `trajanje` varchar(255) NOT NULL,
+  `cena` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 --
 -- Dumping data for table `ucenik`
 --

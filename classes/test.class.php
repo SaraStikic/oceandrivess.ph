@@ -1,6 +1,6 @@
 <? php
 
-class Test extends Dbh{
+class Test extends dbh.class.php{
 
      public function getCenovnik(){
         $sql="SELECT * FROM cenovnik";
