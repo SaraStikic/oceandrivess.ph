@@ -49,6 +49,7 @@ li a {
     <li><a href="nastavnici.php">Nastavnici</a></li> 
     <li><a href="galerija.php">Galerija</a></li> 
     <li><a href="kontakt.php">Kako do nas</a></li>
+    <li><a href="proveriucenika.php">Provera</a></li>
   </ul>
 </nav>
 
