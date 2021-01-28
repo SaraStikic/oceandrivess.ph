@@ -45,6 +45,7 @@ li a {
 <nav>
   <ul>
     <li><a href="index.php">Početna</a></li> 
+    <li><a href="casovi.php">Časovi</a></li> 
     
   </ul>
 </nav>

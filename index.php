@@ -83,8 +83,9 @@ body {
                   Pored učlanjenja novih đaka, škola nudi i prijavu fotografa kako bi podelili znanje sa našim učenicima.
                   Rad sa učenicima se vrši na teritoriji Srbije. Putovanja su sastvani deo časova jer se na taj nači upoznajemo 
                   sa prirodnim lepotama naše zemlje i trudimo se da zabeležimo svaki momenat.
-                   
-                  <i>Postani i ti deo naše ekipe!</i>                 
+                   <p>
+                  <i>Postani i ti deo naše ekipe!</i>      
+                  </p>           
                    </p>     
                 <img data-u="thumb" src="imgs/slika1.png" width="500" height="356" />   
                 <hr>     
