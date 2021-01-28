@@ -14,7 +14,7 @@ class Test extends Dbh{
     }
 
     public function getCenovnikStmt($trajanje, $cena){
-        $sql="SELECT * FROM cenovnik WHERE trajanj=? AND cena=?";
+        $sql="SELECT * FROM cenovnik WHERE trajanje=? AND cena=?";
         $stmt=$this->connect()->prepare($sql);
         $stmt->execute([$trajanje, $cena]);
         $names=$stmt->fetchAll();

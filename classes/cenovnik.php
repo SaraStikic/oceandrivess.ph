@@ -10,7 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cenovnik</title>
 </head>
-<style>body {
+<style>body
+ {
   background: linear-gradient(white,gray);
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -20,7 +21,8 @@
   font-size:15px;
   text-align: center;
   margin: 15px 300px 5px 200px;
-}</style>
+}
+</style>
 <body>
 
     <h1> Cena časova</h1>
