@@ -15,13 +15,17 @@
 <body>
 <style>
 body {
-  background: linear-gradient(white,gray);
+  
+  background: linear-gradient(rgba(0,0,0,0.5),#a9c0bd),url(imgs/glavna.jpg);
+  background-size: cover;
+  background-size: center;
+  height:200vh;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   padding-bottom: 100px;
-  font-size:15px;
+  font-size:20px;
   text-align: center;
   margin: 15px 300px 5px 200px;
 }
@@ -61,8 +65,8 @@ body {
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 <div>
-<h1>Oceandrivess.ph</h1>
-<h2>Škola fotografije</h2>
+<h1><b>Oceandrivess.ph</b></h1>
+<h2><i>Škola fotografije</i></h2>
 </div>
 <div id="informacije">
              <marquee>NA SVAKIH PROVEDENIH 5 ČASOVA <span id="popust">2 PRAKSE GRATIS</span> !</marquee> 
@@ -71,28 +75,36 @@ body {
              <article id="osnovno2">
 
                 <section id="oNamaNaslov">
-                 <h1>Nešto više o našoj školi</h1>
+                 <h1><b>Nešto više o našoj školi</b></h1>
                 </section>
 
                 <section id="text">
                   <p>
-                  OceanDrivess.ph je nova škola fotografije koja je krenula sa radom u cilju povećanja
-                  produktivnosti, mašti i proširivanju vidika kod mladih osoba koje vole fotografiju. 
-                  Svaka napravljena slika prirodne može, uz pravilno korišćene parametre koje nam nudi 
-                  fotoaparat, može da proširi vidike kod mladih osoba. 
-                  Pored učlanjenja novih đaka, škola nudi i prijavu fotografa kako bi podelili znanje sa našim učenicima.
-                  Rad sa učenicima se vrši na teritoriji Srbije. Putovanja su sastvani deo časova jer se na taj nači upoznajemo 
-                  sa prirodnim lepotama naše zemlje i trudimo se da zabeležimo svaki momenat.
+                  OceanDrivess.ph je nova škola fotografije koja želi da svet više uživa u dobrim kadrovima,
+                  bilo da govorimo o veštinama fotografa, ili onoga što kazuju njihove fotografije. 
+                  Danas je fotografija dostupnija nego ikad i suočavamo se sa time da se ona drugačije
+                  doživljava nego pre samo nekoliko decenija. To se na prvom mestu odnosi na njenu
+                  hiperprodukciju, pošto nam više ne nedostaje stvari o kojima smo nekad morali da
+                  mislimo (Imamo li mesta na filmu? Kad će biti gotovo razvijanje filma? Gde mi je
+                  fotoaparat baš sad kad mi je potreban?). U moru fotografija napravljenih sa idejom
+                  da će barem jedna biti dobra, neminovno dolazi do gubljenja vremena i pada kvaliteta
+                  fotografije, pošto se njom više ne moramo baviti sa istom posvećenošću kao što smo
+                  morali kada je ovo bio skuplji, zahtevniji i manje dostupan hobi, odnosno zanimanje.<br>
+                  <b>Zato smo osnovali Oceandrivess.ph školu za mlade fotografe?</b><br>
+                  <i>Misija je da što više ljudi naučimo kako da prave dobre fotografije,
+                   iz što manje pokušaja i sa što je moguće manje potrebe za obradom.</i>
                    <p>
-                  <i>Postani i ti deo naše ekipe!</i>      
+                   <b><i>Postani i ti deo naše ekipe!</i></b>      
                   </p>           
                    </p>     
-                <img data-u="thumb" src="imgs/slika1.png" width="500" height="356" />   
+                <img data-u="thumb" src="imgs/slika1.png" width="500" height="356" />
+                <img data-u="thumb" src="imgs/fotograf.jpg" width="500" height="356" />   
                 <hr>     
                 </section> 
               </article> 
+              
           </div>
- <?php include 'footer.php'; ?>
+          <?php include 'footer.php'; ?>
 
 </body>
 </html>

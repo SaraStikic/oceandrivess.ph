@@ -9,17 +9,25 @@
 </head>
 <body>
     <style>body {
-  background: linear-gradient(white,gray);
+  
+  background: linear-gradient(rgba(0,0,0,0.5),#a9c0bd),url(imgs/glavna.jpg);
+  background-size: cover;
+  background-size: center;
+  height:200vh;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   padding-bottom: 100px;
-  font-size:15px;
+  font-size:20px;
   text-align: center;
   margin: 15px 300px 5px 200px;
 }
 #prijavaForma {
+  background: linear-gradient(rgba(0,0,0,0.5),#a9c0bd),url(imgs/glavna.jpg);
+  background-size: cover;
+    background-size: center;
+    height:100vh;
     width:400px;
     margin-top: 30px;
     padding:10px;
@@ -40,17 +48,22 @@
 <p>U našoj školi imaš mogućnost da biraš da li želiš online ili časove uživo.</p>
 <hr>
 <h2>Online časovi</h2>
-<p>Online časovi su dostupni svima i sve što je potrebno jesta da se prijaviš i mi ćemo te
-kontaktirati isti dan.</p>
+<p>Online časovi su dostupni svima i na njima se radi teoriska osnova kako se rukuje 
+foto-opremom i na koji način fotoaparat radi.</p>
 <img src="imgs/slika2.JPG" alt="" width="600" height="400">
 <hr>
 <h2>Časovi uživo</h2>
-<p>Časovi uživo, vaši omiljeni, se održavaju na teritoriji Beograda. Moguće je da
-naš nastavnik dođe kod tebe ili ti kod nas.</p>
+<p>Časovi uživo,To su kursevi koji za cilj imaju obučavanje pojedinaca i timova da foto-aparat koriste
+ kao alat za pravljenje tačno onakvih fotografija kakve žele i kakve su im potrebne.
+Grupni kursevi sprovode se u grupama od najviše deset polaznika,
+u terminima koji variraju od kursa do kursa.
+Broj polaznika po grupi je ograničen zato što svakome želimo da posvetimo pažnju.
+Individualni kursevi uvek su – baš kao i timske radionice,
+u potpunosti skrojeni prema potrebama naših polaznika. </p>
 <hr>
 
 <div id="prijavaFoma">
-  <h4>Potrebna ti je pomoć oko matematike? <br>
+  <h4>Želiš da budeš deo našeg tima? <br>
 <i>Prijavi se u formi ispod:</i></h4>
 <form action="includes/signup.inc.php" method="POST">
 <input type="text", name="idu", placeholder="IDUcenika">

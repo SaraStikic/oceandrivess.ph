@@ -1,7 +1,8 @@
 <?php
 if (!isset ($_GET["nastavnikid"])){
 echo "Parametar ID nije prosleđen!";
-} else {
+} 
+else {
 $pomocna=$_GET["nastavnikid"];
 //uspostavljanje konekcije
 include "konekcija.php";
@@ -21,7 +22,7 @@ while($red = $rezultat->fetch_object()){
  echo "<tr>";
  echo "<td>" . $red->nastavnikid . "</td>";
  echo "<td>" . $red->imen . "</td>";
- echo "<td>" . $red->prezimen . "</td>";
+ echo "<td>" . $red->prezime . "</td>";
 
  echo "</tr>";
  }

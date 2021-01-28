@@ -15,7 +15,7 @@
         <h3><b>Pratite nas na društvenim mrežama</b></h3>
       
         <ul class="social-links">
-          <li><a href="https://www.facebook.com/Mathiscool5/" target="_blank"><i class="fa fa-facebook fa-fw"></i></a></li>
+          <li><a href="https://www.facebook.com/oceandrivessph-102375867840604" target="_blank"><i class="fa fa-facebook fa-fw"></i></a></li>
           <li><a href="https://www.instagram.com/oceandrivess.ph/" target="_blank"><i class="fa fa-instagram fa-fw"></i></a></li>
 
         </ul>
