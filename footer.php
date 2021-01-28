@@ -12,7 +12,7 @@
     <footer id="footer" class="footer">
         <div class="container text-center">
       
-        <h3><b>Pratite nas na drustvenim mrezama</b></h3>
+        <h3><b>Pratite nas na društvenim mrežama</b></h3>
       
         <ul class="social-links">
           <li><a href="https://www.facebook.com/Mathiscool5/" target="_blank"><i class="fa fa-facebook fa-fw"></i></a></li>
