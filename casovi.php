@@ -42,7 +42,7 @@
 <h2>Online časovi</h2>
 <p>Online časovi su dostupni svima i sve što je potrebno jesta da se prijaviš i mi ćemo te
 kontaktirati isti dan.</p>
-<img src="imgs/laptop.jpg" alt="" width="600" height="400">
+<img src="imgs/slika2.JPG" alt="" width="600" height="400">
 <hr>
 <h2>Časovi uživo</h2>
 <p>Časovi uživo, vaši omiljeni, se održavaju na teritoriji Beograda. Moguće je da
