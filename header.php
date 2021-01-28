@@ -48,6 +48,7 @@ li a {
     <li><a href="casovi.php">Časovi</a></li> 
     <li><a href="nastavnici.php">Nastavnici</a></li> 
     <li><a href="galerija.php">Galerija</a></li> 
+    <li><a href="kontakt.php">Kako do nas</a></li>
   </ul>
 </nav>
 
