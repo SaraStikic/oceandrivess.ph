@@ -92,7 +92,7 @@ body {
                   morali kada je ovo bio skuplji, zahtevniji i manje dostupan hobi, odnosno zanimanje.<br>
                   <b>Zato smo osnovali Oceandrivess.ph školu za mlade fotografe?</b><br>
                   <i>Misija je da što više ljudi naučimo kako da prave dobre fotografije,
-                   iz što manje pokušaja i sa što je moguće manje potrebe za obradom.</i>
+                   iz što manje pokušaja i sa što je moguće manje potrebe za obradom. Čekamo Vas!</i>
                    <p>
                    <b><i>Postani i ti deo naše ekipe!</i></b>      
                   </p>           
