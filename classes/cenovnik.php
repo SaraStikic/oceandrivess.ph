@@ -1,7 +1,7 @@
 <?php
     include 'dbh.class.php';
     
-    //include 'classes/test.class.php'
+    //include 'test.class.php'
 ?>
 
 <!DOCTYPE html>
@@ -16,22 +16,22 @@
 </head>
 <body>
 <style>body{
-    background: linear-gradient(rgba(0,0,0,0.5),#a9c0bd),url(imgs/glavna.jpg);
-  background-size: cover;
-  background-size: center;
-  height:200vh;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding-bottom: 100px;
-  font-size:20px;
-  text-align: center;
-  margin: 15px 300px 5px 200px;
+    background: linear-gradient(rgba(0,0,0,0.5),#a9c0bd),url(../imgs/glavna.jpg);
+    background-size: cover;
+    background-size: center;
+    height:200vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-bottom: 100px;
+    font-size:20px;
+    text-align: center;
+    margin: 15px 300px 5px 200px;
 }
 
 </style>
-
+<body>
     <h1> Cenovnik</h1>
     <section id ="feature" class="section-padding">
       <div class="container">
@@ -50,21 +50,22 @@
               </thead>
               <tbody>
               <?php
-              $con = new Connection();
-              $con->open();
-              $con->query("SELECT * FROM cenovnik");
-                foreach ($con as $cena) {
-              $brojac++;
-              ?>
-                       <tr>                      
-                           <td><?php echo ($brojac); ?></td>
-                           <td><?php echo ($cena["trajanje"]); ?></td>
-                           <td><?php echo ($cena["cena"]); ?></td>
-                       </tr>
-                       
-                       <?php
+             $conn = new Connection();
+             $conn->open();
+             $rez=$conn->query("SELECT * FROM cenovnik");
+             $brojac=null;
+               foreach ($rez as $cena) {
+             $brojac++;
+             ?>
+                      <tr>                      
+                          <td><?= $brojac ?></td>
+                          <td><?php echo $cena["trajanje"]; ?></td>
+                          <td><?php echo $cena["cena"]; ?></td>
+                      </tr>
                       
-                }        
+                      <?php
+                     
+               } 
                  ?>
                       
                    
@@ -78,7 +79,7 @@
     </section>
    
     <?php
-$con->close(); 
+ 
 
 ?>
 

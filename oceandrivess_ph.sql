@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.2
+-- version 5.0.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 05, 2020 at 06:03 PM
--- Server version: 10.4.10-MariaDB
--- PHP Version: 7.1.33
+-- Generation Time: Feb 13, 2021 at 05:29 PM
+-- Server version: 10.4.14-MariaDB
+-- PHP Version: 7.2.34
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -25,6 +24,26 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `cenovnik`
+--
+
+CREATE TABLE `cenovnik` (
+  `idc` int(11) NOT NULL,
+  `trajanje` varchar(255) NOT NULL,
+  `cena` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `cenovnik`
+--
+
+INSERT INTO `cenovnik` (`idc`, `trajanje`, `cena`) VALUES
+(1, '90 min', 800),
+(2, '60', 600);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `nastavnik`
 --
 
@@ -33,6 +52,14 @@ CREATE TABLE `nastavnik` (
   `imen` varchar(255) NOT NULL,
   `prezimen` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `nastavnik`
+--
+
+INSERT INTO `nastavnik` (`nastavnikid`, `ime`, `prezime`) VALUES
+(1, 'Sara ', 'Stikić'),
+(2, 'Djordje', 'Janeski');
 
 -- --------------------------------------------------------
 
@@ -45,36 +72,59 @@ CREATE TABLE `ucenik` (
   `ime` varchar(255) NOT NULL,
   `prezime` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
--- --------------------------------------------------------
 
---
--- Table structure for table `cenovnik`
---
-
-CREATE TABLE `cenovnik` (
-  `idc` int(11) NOT NULL,
-  `trajanje` varchar(255) NOT NULL,
-  `cena` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 --
 -- Dumping data for table `ucenik`
 --
 
 INSERT INTO `ucenik` (`ucenikid`, `ime`, `prezime`) VALUES
-(1, 'Jovan', 'Stikić'),
-(2, 'Marina', 'Petrović'),
-(3, 'Irena', 'Todorovski'),
-(4, 'Miljana', 'Trifunović');
+(1, 'Mara', 'Stikic'),
+(5, 'jovan', 'Petrovic'),
+(13, 'sara', 'stikic\r\n');
 
 --
 -- Indexes for dumped tables
 --
 
 --
+-- Indexes for table `cenovnik`
+--
+ALTER TABLE `cenovnik`
+  ADD PRIMARY KEY (`idc`);
+
+--
+-- Indexes for table `nastavnik`
+--
+ALTER TABLE `nastavnik`
+  ADD PRIMARY KEY (`nastavnikid`);
+
+--
 -- Indexes for table `ucenik`
 --
 ALTER TABLE `ucenik`
   ADD PRIMARY KEY (`ucenikid`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `cenovnik`
+--
+ALTER TABLE `cenovnik`
+  MODIFY `idc` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `nastavnik`
+--
+ALTER TABLE `nastavnik`
+  MODIFY `nastavnikid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `ucenik`
+--
+ALTER TABLE `ucenik`
+  MODIFY `ucenikid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
