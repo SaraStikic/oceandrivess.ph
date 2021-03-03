@@ -1,10 +1,30 @@
+<?php
+    include 'classes/dbh.class.php';
+    
+    //include 'test.class.php'
+$orderBy = '';
+
+if (isset($_GET['sort'])) {
+  if ($_GET['sort'] == 'rastuce') {
+    $orderBy = ' order by n.ime asc';
+  }
+  if ($_GET['sort'] == 'opadajuce') {
+    $orderBy = ' order by n.ime desc';
+  }
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<script type="text/javascript" src="pronadji.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Spisak nastavnika</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    
 </head>
 <style>
+
 body {
   background: linear-gradient(rgba(0,0,0,0.5),#a9c0bd),url(imgs/glavna.jpg);
   background-size: cover;
@@ -21,29 +41,68 @@ body {
 }
 
 </style>
+
+
 <body>
 <?php include 'header.php'; ?>
-<?php
-include "konekcija.php";
-$sql="SELECT * FROM nastavnik ORDER BY imen ASC";
-$rezultat = $mysqli->query($sql);
-?>
-<form> 
-<b>Izaberi nastavnika:</b>
-<select name="nastavnik" onchange="PrikaziNastavnika(this.value)">
-<?php
-while($red = $rezultat->fetch_object()){
-?>
-<option value="<?php echo $red->nastavnikid;?>"><?php echo $red->imen;?></option>
-<?php
-}
-?>
-</select>
-</form>
-<p><div id="popuni"><b>Podaci o selektovanom nastavniku će biti prikazani ovde. Stranica se ne učitava ponovo.</b></div></p>
-<?php
-$mysqli->close();
-?>
+<br>
+
+    <section id ="feature" class="section-padding">
+      <div class="container" style="width:300px" align="center">
+        <div class="row">
+          <div class="header-section text-center">
+            <h2>Dostupni nastavnici</h2>
+            <p>Sortiraj: 
+
+            <a href="index.php?sort=rastuce">Rastuce-naziv nastavnika</a>
+            |
+            <a href="index.php?sort=opadajuce">Opadajuce-naziv nastavnika</a>
+
+
+          </p>
+            <hr class="bottom-line">
+            <table class="table table-hover" >
+              <thead>
+                <tr >
+                  <th class="column_sort" data-order="desc" href="#">R.b.</th>
+                  <th class="column_sort" data-order="desc" href="#">Ime</th>
+                  <th class="column_sort" data-order="desc" href="#"> Prezime</th>
+                  </tr>
+              </thead>
+              <tbody>
+              <?php
+             $conn = new Connection();
+             $conn->open();
+             $rez=$conn->query("SELECT * FROM nastavnik ". $orderBy);
+             $brojac=null;
+               foreach ($rez as $nast) {
+             $brojac++;
+             ?>
+                      <tr>                      
+                          <td><?= $brojac ?></td>
+                          <td><?php echo $nast["ime"]; ?></td>
+                          <td><?php echo $nast["prezime"]; ?></td>
+                      </tr>
+                      
+                      <?php
+                     
+               } 
+                 ?>
+                      
+                   
+                    
+                    
+               </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+    <?php
+?> 
 <?php include 'footer.php'; ?>
 </body>
 </html>
+
+

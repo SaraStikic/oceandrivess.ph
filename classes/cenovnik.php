@@ -32,6 +32,7 @@
 
 </style>
 <body>
+<?php include 'header.php'; ?>
     <h1> Cenovnik</h1>
     <section id ="feature" class="section-padding">
       <div class="container">
