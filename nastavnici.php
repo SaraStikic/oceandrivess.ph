@@ -57,8 +57,7 @@ body {
             <a href="nastavnici.php?sort=rastuce">Rastuce-naziv nastavnika</a>
             |
             <a href="nastavnici.php?sort=opadajuce">Opadajuce-naziv nastavnika</a>
-
-
+            <p><a href="izaberiNastavnika.php" class="btn btn-danger btn-lg">Odabir nastavnika <i class="fa fa-plus"></i></a>
           </p>
             <hr class="bottom-line">
             <table class="table table-hover" >
