@@ -54,9 +54,9 @@ body {
             <h2>Dostupni nastavnici</h2>
             <p>Sortiraj: 
 
-            <a href="index.php?sort=rastuce">Rastuce-naziv nastavnika</a>
+            <a href="nastavnici.php?sort=rastuce">Rastuce-naziv nastavnika</a>
             |
-            <a href="index.php?sort=opadajuce">Opadajuce-naziv nastavnika</a>
+            <a href="nastavnici.php?sort=opadajuce">Opadajuce-naziv nastavnika</a>
 
 
           </p>
@@ -64,16 +64,16 @@ body {
             <table class="table table-hover" >
               <thead>
                 <tr >
-                  <th class="column_sort" data-order="desc" href="#">R.b.</th>
-                  <th class="column_sort" data-order="desc" href="#">Ime</th>
-                  <th class="column_sort" data-order="desc" href="#"> Prezime</th>
+                  <th class="text-center">R.b.</th>
+                  <th class="text-center">Ime</th>
+                  <th class="text-center"> Prezime</th>
                   </tr>
               </thead>
               <tbody>
               <?php
              $conn = new Connection();
              $conn->open();
-             $rez=$conn->query("SELECT * FROM nastavnik ". $orderBy);
+             $rez=$conn->query("SELECT * FROM nastavnik n". $orderBy);
              $brojac=null;
                foreach ($rez as $nast) {
              $brojac++;
@@ -102,6 +102,10 @@ body {
     <?php
 ?> 
 <?php include 'footer.php'; ?>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
 </body>
 </html>
 

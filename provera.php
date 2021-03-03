@@ -1,3 +1,4 @@
+
 <?php
 if (!isset ($_GET["id"])){
 echo "Parametar Naziv nije prosleđen!";

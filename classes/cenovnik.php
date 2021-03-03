@@ -32,19 +32,19 @@
 
 </style>
 <body>
-<?php include 'header.php'; ?>
-    <h1> Cenovnik</h1>
+    
     <section id ="feature" class="section-padding">
-      <div class="container">
+      <div class="container" style="width:300px" align="center">
         <div class="row">
           <div class="header-section text-center">
             <h2>Cena časova</h2>
+            <br><br><br><br>
 
             <hr class="bottom-line">
             <table class="table table-hover" >
               <thead>
                 <tr >
-                  <th class="text-center">Redni broj</th>
+                  <th class="text-center">R.b.</th>
                   <th class="text-center">Trajanje časa</th>
                   <th class="text-center"> Cena</th>
                   </tr>
