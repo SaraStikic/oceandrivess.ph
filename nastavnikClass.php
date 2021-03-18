@@ -14,8 +14,8 @@ class NastavnikC
 	{
 
 		$data = array(
-			"id" => trim($_POST['nastavnikid']),
-			"nastavnik" => trim($_POST['ime'])
+			"nastavnikID" => trim($_POST['nastavniID']),
+			"ucenikID" => trim($_POST['uceniID']),
 		);
 
 		$sacuvano = $this->db->insert('rezervacija', $data);
