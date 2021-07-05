@@ -19,10 +19,10 @@ function stateChanged(){
 if (xmlHttp.readyState==4){
 	
  	if (xmlHttp.responseText=="0"){
-		document.getElementById("user").innerHTML="Ucenik sa takvim id već postoji u bazi";
+		document.getElementById("user").innerHTML="Id ucenika je dostupno";
 		document.getElementById("id").focus();
 	} else {
-				document.getElementById("user").innerHTML="Id ucenika je dostupno";
+				document.getElementById("user").innerHTML="Ucenik sa takvim id već postoji u bazi";
 	}
 
 }
